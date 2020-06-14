@@ -41,6 +41,4 @@ void z(int n, int x, int y){
 int main(){
 	scanf("%d %d %d", &N, &r, &c);
 	z(N, r, c);
-
 }
- 
