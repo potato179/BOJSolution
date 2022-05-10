@@ -84,7 +84,7 @@ void sq(int node, int s, int e, int l, int r){
 int main(){
     cin >> n;
     for(int i=1; i<=n; i++){
-        ll t; cin >> t
+        ll t; cin >> t;
         add(1, 1, n, i, i, t);
     }
 
