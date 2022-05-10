@@ -83,8 +83,6 @@ void sq(int node, int s, int e, int l, int r){
 }
 
 int main(){
-    //freopen("in", "r", stdin);
-    ios_base::sync_with_stdio(0); cin.tie(0);
     cin >> n;
     for(int i=1; i<=n; i++){
         ll t; cin >> t
