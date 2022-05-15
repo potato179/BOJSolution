@@ -1,17 +1,8 @@
-#include<iostream>
-#include<string>
-#include<algorithm> 
-using namespace std;
-
+#include<cstdio>
+int a[10], x, r;
 int main(){
-    string str;
-    cin >> str;
-    int arr[10] = {0};
-    for(int i=0; i< str.size(); i++){
-    arr[str[i] - '0']++;}
-    int num =0;
-    for(int i=0; i< 10; i++) {
-        if(i!=9 && i!=6) num = max(num, arr[i]);
+    while(~scanf("%1d",&x)) a[x]++;
+    a[6] = (a[6]+a[9]+1)/2;
+    for (int i=1; i<9; i++) if(a[r] < a[i]) r = i;
+    rintf("%d", a[r]);
     }
-    cout << max(num, (arr[6] + arr[9] + 1) / 2);
-}
